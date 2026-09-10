@@ -1,14 +1,29 @@
 {
 	"name": "pi-slash-suggest",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Mid-text `/` autocomplete + slash-token highlight for pi's editor (custom editor override + provider wrapper, no core patch)",
 	"type": "module",
-	"keywords": ["pi-package"],
+	"keywords": ["pi-package", "pi-extension", "pi-coding-agent", "autocomplete"],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/th-dev-git/pi-slash-suggest.git"
+	},
+	"homepage": "https://github.com/th-dev-git/pi-slash-suggest",
+	"files": [
+		"*.ts",
+		"README.md",
+		"LICENSE",
+		"package.json",
+		"assets"
+	],
 	"pi": {
-		"extensions": ["./index.ts"]
+		"extensions": ["./index.ts"],
+		"video": "https://raw.githubusercontent.com/th-dev-git/pi-slash-suggest/main/assets/pi-slash-suggest-demo.mp4",
+		"image": "https://raw.githubusercontent.com/th-dev-git/pi-slash-suggest/main/assets/pi-slash-suggest-preview.png"
 	},
 	"scripts": {
-		"test": "echo 'Tests live in the pi-extensions repo: bun test tests/slash-suggest.test.ts'"
+		"test": "echo 'Tests live in the pi-extensions repo: bun test tests/pi-slash-suggest.test.ts'"
 	},
 	"peerDependencies": {
 		"@earendil-works/pi-coding-agent": "*"
