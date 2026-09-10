@@ -1,0 +1,16 @@
+{
+	"name": "pi-slash-suggest",
+	"version": "0.1.0",
+	"description": "Mid-text `/` autocomplete + slash-token highlight for pi's editor (custom editor override + provider wrapper, no core patch)",
+	"type": "module",
+	"keywords": ["pi-package"],
+	"pi": {
+		"extensions": ["./index.ts"]
+	},
+	"scripts": {
+		"test": "echo 'Tests live in the pi-extensions repo: bun test tests/slash-suggest.test.ts'"
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*"
+	}
+}
