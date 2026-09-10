@@ -1,12 +1,12 @@
 <p>
-  <img src="https://raw.githubusercontent.com/th-dev-git/pi-slash-suggest/main/assets/pi-slash-suggest-preview.png" alt="pi-slash-suggest" width="1100">
+  <img src="https://github.com/user-attachments/assets/341c5fcf-4974-4721-aa81-5793c0337dc3" alt="pi-slash-suggest" width="1100">
 </p>
 
 # pi-slash-suggest
 
 `pi-slash-suggest` makes Pi's slash menu available in the middle of the editor, not only at the start of a line. Type normal text, press `/`, pick a command, and the completed slash token gets a persistent highlight.
 
-<video src="https://github.com/th-dev-git/pi-slash-suggest/raw/main/assets/pi-slash-suggest-demo.mp4" controls muted loop playsinline width="1100"></video>
+<https://github.com/user-attachments/assets/526d5297-3bd0-4708-a0ec-59cea2795041>
 
 ## Install
 
