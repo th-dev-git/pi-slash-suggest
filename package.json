@@ -1,6 +1,6 @@
 {
 	"name": "pi-slash-suggest",
-	"version": "0.1.1",
+	"version": "0.2.0",
 	"description": "Mid-text `/` autocomplete + slash-token highlight for pi's editor (custom editor override + provider wrapper, no core patch)",
 	"type": "module",
 	"keywords": ["pi-package", "pi-extension", "pi-coding-agent", "autocomplete"],

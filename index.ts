@@ -9,13 +9,16 @@
  */
 
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
-import { SlashSuggestEditor } from "./editor";
+import { chainEditorComponent } from "./editor-chain";
+import { makeSlashSuggestEditorClass } from "./editor";
 import { wrapSlashProvider } from "./provider";
 
 export default function slashSuggest(pi: ExtensionAPI) {
 	pi.on("session_start", (_event, ctx) => {
 		if (!ctx.hasUI) return; // RPC/print modes never construct an editor
-		ctx.ui.setEditorComponent((tui, theme, keybindings) => new SlashSuggestEditor(tui, theme, keybindings));
+		// Chain, don't replace: another editor-installing extension (e.g.
+		// pi-char-thai) may load before or after us (editor-chain.ts).
+		chainEditorComponent(ctx.ui, makeSlashSuggestEditorClass);
 		ctx.ui.addAutocompleteProvider((base) => wrapSlashProvider(base));
 	});
 }
